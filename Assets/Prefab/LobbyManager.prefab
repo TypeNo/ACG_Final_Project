@@ -65,5 +65,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Players: []
-  _lobbyPlayerPrefab: {fileID: 0}
-  _onPlayerListChanged: {fileID: 0}
+  _lobbyPlayerPrefab: {fileID: 8114482857290719216, guid: fef296f0cf4019a40b79b41d6c963b51, type: 3}
+  _onPlayerListChanged: {fileID: 11400000, guid: fecd06e399ff0d245a48b4a4538b7fba, type: 2}
+  playerStageRoot: {fileID: 0}
+  playerStageDisplayPrefab: {fileID: 2110030739342246760, guid: c1734ed55ef7d3342a98e0fa8c9dea20, type: 3}
+  spacing: 2.5

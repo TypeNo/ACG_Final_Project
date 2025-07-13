@@ -13,21 +13,27 @@ public class LobbyPlayerData : NetworkBehaviour
     {
         playerRef = Object.InputAuthority;
 
+        if (Object.HasInputAuthority)
+        {
+            // Called by local player who owns this object
+            var nickname = PlayerPrefs.GetString("PlayerName", "Player");
+            RPC_SetNickname(nickname);
+
+            // Assign role based on logic (optional)
+            if (Runner.IsServer)
+                RPC_SetPlayerRole(PlayerRole.PLAYER1);
+            else
+                RPC_SetPlayerRole(PlayerRole.PLAYER2);
+        }
+
         if (Runner.IsServer)
         {
-            RPC_SetPlayerRole(PlayerRole.PLAYER1);
             Runner.MakeDontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            RPC_SetPlayerRole(PlayerRole.PLAYER2);
         }
 
         isInitialized = true;
-        
-
-
     }
+
 
     [Rpc(RpcSources.InputAuthority, RpcTargets.StateAuthority)]
     private void RPC_SetNickname(NetworkString<_32> nickname)

@@ -42,6 +42,24 @@ public class LobbyLogic : MonoBehaviour
         });
     }
 
+        // Add this method to properly leave room and shutdown network
+    public async Task LeaveRoom()
+    {
+        if (_runner != null && _runner.IsRunning)
+        {
+            // Shutdown the network runner
+            await _runner.Shutdown();
+
+            // Destroy the runner GameObject
+            if (_runner.gameObject != null)
+            {
+                Destroy(_runner.gameObject);
+            }
+            _runner = null;
+            MainMenuController.Instance.ShowSection(MenuState.Multiplayer);
+        }
+    }
+
     private void SpawnLobbyManager()
     {
         if (_runner.IsServer && _lobbyManagerPrefab != null)

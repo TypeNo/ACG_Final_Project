@@ -13,6 +13,12 @@ public class LobbyManager : NetworkBehaviour, IPlayerJoined, IPlayerLeft
     public NetworkLinkedList<LobbyPlayerData> Players { get; } = default;
     [SerializeField] private NetworkObject _lobbyPlayerPrefab;
     [SerializeField] private LobbyPlayerListDataEvent _onPlayerListChanged;
+    [Header("Player Stage")]
+    [SerializeField] private Transform playerStageRoot;
+    [SerializeField] private GameObject playerStageDisplayPrefab;
+    [SerializeField] private float spacing = 2.5f;
+    private List<GameObject> playerDisplays = new List<GameObject>();
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()
     {
@@ -23,6 +29,13 @@ public class LobbyManager : NetworkBehaviour, IPlayerJoined, IPlayerLeft
         else
         {
             Destroy(gameObject);
+        }
+
+        playerStageRoot = GameObject.Find("PlayerStage")?.transform;
+
+        if (playerStageRoot == null)
+        {
+            Debug.LogError("PlayerStageRoot not found in the hierarchy.");
         }
     }
 
@@ -80,9 +93,55 @@ public class LobbyManager : NetworkBehaviour, IPlayerJoined, IPlayerLeft
         }
     }
 
+    #region  OnStartGameOrReadyClicked
+    public void OnStartGameOrReadyClicked()
+    {
+        if (Runner.IsServer)
+        {
+            // if (!CheckAllPlayersReady())
+            // {
+            //     Debug.Log("Not all players are ready. Cannot start the game.");
+            //     return;
+            // }
+            StartGame();
+        }
+        else
+        {
+            //TogglePlayerReady();
+        }
+    }
+    #endregion
+
     private void OnPlayersChanged()
     {
-        _onPlayerListChanged.Raise(Players);
+        //_onPlayerListChanged.Raise(Players);
+            // Clear previous displays
+    foreach (var go in playerDisplays)
+        Destroy(go);
+    playerDisplays.Clear();
+
+    // Get the current players (example: Players is a list or dictionary)
+    var players = Players; // or LobbyManager.Instance.Players if needed
+
+    for (int i = 0; i < players.Count; i++)
+    {
+        var player = players[i];
+
+        // Instantiate the display
+        var display = Instantiate(playerStageDisplayPrefab, playerStageRoot);
+
+        // Position at a 45-degree incline
+        Vector3 position = new Vector3(i * spacing, 0, i * spacing); // 45° incline
+        display.transform.localPosition = position;
+
+        // Optional: Set name or appearance
+        display.name = $"PlayerDisplay_{i}";
+        //display.GetComponentInChildren<TextMeshProUGUI>()?.SetText(player.Name); // if you have a name tag
+
+        playerDisplays.Add(display);
+    }
+
+        
     }
     
     void Start()
