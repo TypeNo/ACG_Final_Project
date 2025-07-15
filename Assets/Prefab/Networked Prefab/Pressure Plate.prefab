@@ -1,0 +1,217 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4422531184480631111
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7241599082818948805}
+  - component: {fileID: 5426813093184873966}
+  m_Layer: 0
+  m_Name: Collider
+  m_TagString: Pressure Plate
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7241599082818948805
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4422531184480631111}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0.010742269, y: 0.18528146, z: 0.0008386516}
+  m_LocalScale: {x: 1.150745, y: 1.150745, z: 1.524436}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7174391270535144726}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &5426813093184873966
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4422531184480631111}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.86190385, y: 0.86665154, z: 0.08298494}
+  m_Center: {x: 0.000000014901165, y: 0.000000029802337, z: -0.000000022351744}
+--- !u!1001 &7213138931394822909
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8987411430748492759, guid: 9ad3d40510f6e784e957a36979a7384f, type: 3}
+      propertyPath: m_TagString
+      value: Pressure Plate
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9ad3d40510f6e784e957a36979a7384f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.62288
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9ad3d40510f6e784e957a36979a7384f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.62288
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9ad3d40510f6e784e957a36979a7384f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.62288
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9ad3d40510f6e784e957a36979a7384f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.94359
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9ad3d40510f6e784e957a36979a7384f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.089904
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9ad3d40510f6e784e957a36979a7384f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.12137
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9ad3d40510f6e784e957a36979a7384f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9ad3d40510f6e784e957a36979a7384f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9ad3d40510f6e784e957a36979a7384f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9ad3d40510f6e784e957a36979a7384f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9ad3d40510f6e784e957a36979a7384f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9ad3d40510f6e784e957a36979a7384f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9ad3d40510f6e784e957a36979a7384f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ad3d40510f6e784e957a36979a7384f, type: 3}
+      propertyPath: m_Name
+      value: Pressure Plate
+      objectReference: {fileID: 0}
+    - target: {fileID: 3320257301069085580, guid: 9ad3d40510f6e784e957a36979a7384f, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 02faf7dd659cd4f47ad329c17b719c4b, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9ad3d40510f6e784e957a36979a7384f, type: 3}
+      insertIndex: 1
+      addedObject: {fileID: 7241599082818948805}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -8987411430748492759, guid: 9ad3d40510f6e784e957a36979a7384f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5175902620096232598}
+    - targetCorrespondingSourceObject: {fileID: -8987411430748492759, guid: 9ad3d40510f6e784e957a36979a7384f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 558406274946078127}
+    - targetCorrespondingSourceObject: {fileID: -8987411430748492759, guid: 9ad3d40510f6e784e957a36979a7384f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 663678881961946129}
+  m_SourcePrefab: {fileID: 100100000, guid: 9ad3d40510f6e784e957a36979a7384f, type: 3}
+--- !u!23 &5335036888460491121 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3320257301069085580, guid: 9ad3d40510f6e784e957a36979a7384f, type: 3}
+  m_PrefabInstance: {fileID: 7213138931394822909}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7174391270535144726 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9ad3d40510f6e784e957a36979a7384f, type: 3}
+  m_PrefabInstance: {fileID: 7213138931394822909}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7447963466799197908 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8987411430748492759, guid: 9ad3d40510f6e784e957a36979a7384f, type: 3}
+  m_PrefabInstance: {fileID: 7213138931394822909}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &5175902620096232598
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7447963466799197908}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.8619039, y: 0.86665154, z: 0.31068465}
+  m_Center: {x: 0, y: 0.000000041578286, z: 0.11384971}
+--- !u!114 &558406274946078127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7447963466799197908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1552182283, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SortKey: 3512957323
+  ObjectInterest: 1
+  Flags: 262145
+  NestedObjects: []
+  NetworkedBehaviours:
+  - {fileID: 663678881961946129}
+  ForceRemoteRenderTimeframe: 0
+--- !u!114 &663678881961946129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7447963466799197908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a88a17c76ab422439768e1b4656a4e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonMeshRenderer: {fileID: 5335036888460491121}
+  pressedColor: {r: 1, g: 0, b: 0, a: 1}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  _ButtonColor: {r: 0, g: 0, b: 0, a: 0}
+  doorToOpenLeft: {fileID: 0}
+  doorToOpenRight: {fileID: 0}
