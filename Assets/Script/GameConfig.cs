@@ -4,7 +4,7 @@ public class GameConfig
 {
     // UI settings
     public const string MAIN_MENU_SCENE = "MainMenu";
-    public const string GAME_SCENE = "GamePlay"; // Replace with your actual game scene name
+    public const string GAME_SCENE = "Game Scene"; // Replace with your actual game scene name
 
 }
 
