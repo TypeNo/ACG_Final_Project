@@ -100,7 +100,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 286
+  controlID: 126
   draggingID: 0
 --- !u!114 &5
 MonoBehaviour:
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 230
+  controlID: 25
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -320,7 +320,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 20f9ffffccfaffffb8bb000014bd0000
+      m_ExpandedIDs: b2e8ffffcae8ffff8cecffffb6ecffff34faffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -440,8 +440,7 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SkipHidden: 0
     m_SearchArea: 1
-    m_Folders:
-    - Assets/Script
+    m_Folders: []
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -452,14 +451,14 @@ MonoBehaviour:
   m_StartGridSize: 64
   m_LastFolders: []
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: D:\Heng\Unity\Unity Project\ACG_Final_Project
+  m_LastProjectPath: C:\Users\ROG ZEPHYRUS\Documents\GitHub\ACG_Final_Project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: b0230000
     m_LastClickedID: 9136
-    m_ExpandedIDs: 000000007ade0000
+    m_ExpandedIDs: 00000000c2c30000c4c30000c6c30000c8c30000cac30000ccc30000cec30000d0c30000d2c30000d4c30000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -488,7 +487,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 32}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000007ade0000
+    m_ExpandedIDs: 00000000c2c30000c4c30000c6c30000c8c30000cac30000ccc30000cec30000d0c30000d2c30000d4c30000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1268,9 +1267,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -14.4973135, y: -3.433346, z: 3.7325141}
+    m_Target: {x: -6.906886, y: 1.594151, z: 20.396332}
     speed: 2
-    m_Value: {x: -14.4973135, y: -3.433346, z: 3.7325141}
+    m_Value: {x: -6.906886, y: 1.594151, z: 20.396332}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1316,13 +1315,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.15855637, y: 0.2307816, z: -0.038144615, w: -0.95925397}
+    m_Target: {x: -0.004962255, y: -0.9632961, z: -0.0179168, w: 0.26815006}
     speed: 2
-    m_Value: {x: -0.15855637, y: 0.2307816, z: -0.038144615, w: -0.95925397}
+    m_Value: {x: 0.0049617877, y: 0.96320486, z: 0.0179151, w: -0.26812464}
   m_Size:
-    m_Target: 10
+    m_Target: 1.2247453
     speed: 2
-    m_Value: 10
+    m_Value: 1.2247453
   m_Ortho:
     m_Target: 0
     speed: 2
