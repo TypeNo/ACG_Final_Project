@@ -8437,6 +8437,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4050932646497432960, guid: dd30bc8615a3db445963c7dccf03578f, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 02faf7dd659cd4f47ad329c17b719c4b, type: 2}
     - target: {fileID: 6226883189469945893, guid: dd30bc8615a3db445963c7dccf03578f, type: 3}
       propertyPath: m_Name
       value: Plane (1)
@@ -10530,6 +10534,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plane (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7726423549032268455, guid: 162e54e1552be124982fdd989c80e2e5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 026e5b493353fb2459c2f77b837e4053, type: 2}
     - target: {fileID: 8618688402671829064, guid: 162e54e1552be124982fdd989c80e2e5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

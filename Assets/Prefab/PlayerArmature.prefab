@@ -1418,10 +1418,10 @@ GameObject:
   - component: {fileID: 3866407348357061411}
   - component: {fileID: 5580495013378993588}
   - component: {fileID: -3711582911906874288}
-  - component: {fileID: 2207362911876435960}
   - component: {fileID: 3502585279016780116}
   - component: {fileID: -3422248925141821708}
   - component: {fileID: 6711395084757128766}
+  - component: {fileID: -2769574772508221376}
   m_Layer: 8
   m_Name: PlayerArmature
   m_TagString: Player
@@ -1513,7 +1513,7 @@ MonoBehaviour:
   NetworkedBehaviours:
   - {fileID: 5580495013378993588}
   - {fileID: -3711582911906874288}
-  - {fileID: 2207362911876435960}
+  - {fileID: -2769574772508221376}
   ForceRemoteRenderTimeframe: 0
 --- !u!114 &5580495013378993588
 MonoBehaviour:
@@ -1549,24 +1549,6 @@ MonoBehaviour:
   _thirdPersonController: {fileID: 6711395084757128766}
   _inputs: {fileID: 3502585279016780116}
   playerLookTransform: {fileID: 2318927567598306154}
---- !u!114 &2207362911876435960
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5728655216717215779}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 506319458, guid: e725a070cec140c4caffb81624c8c787, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Animator: {fileID: 3382191263085236182}
-  ApplyTiming: 2
-  SyncSettings: -1
-  StateHashes: 0000000084ca1cc0f9c6230b1c6a54339e2518b671a7e1076b36dbedb1afdc305a6c54cd2b1a167c7940695520e23b685928a8ce
-  TriggerHashes: 00000000
-  TotalWords: 5
 --- !u!114 &3502585279016780116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1584,7 +1566,7 @@ MonoBehaviour:
   jump: 0
   sprint: 0
   analogMovement: 0
-  cursorLocked: 1
+  cursorLocked: 0
   cursorInputForLook: 1
 --- !u!114 &-3422248925141821708
 MonoBehaviour:
@@ -1628,10 +1610,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e54e5a728a9234ab24fcf1460ed8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed: 20
-  SprintSpeed: 30
-  RotationSmoothTime: 0.3
-  SpeedChangeRate: 5
+  MoveSpeed: 2
+  SprintSpeed: 5.335
+  RotationSmoothTime: 0.12
+  SpeedChangeRate: 10
   LandingAudioClip: {fileID: 8300000, guid: ff697d3070687ce4583faa0561a145a2, type: 3}
   FootstepAudioClips:
   - {fileID: 8300000, guid: 72f526a6a9890f643a88e85a61c86c8a, type: 3}
@@ -1660,6 +1642,24 @@ MonoBehaviour:
   BottomClamp: -30
   CameraAngleOverride: 0
   LockCameraPosition: 0
+--- !u!114 &-2769574772508221376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5728655216717215779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 506319458, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Animator: {fileID: 3382191263085236182}
+  ApplyTiming: 2
+  SyncSettings: -1
+  StateHashes: 0000000084ca1cc0f9c6230b1c6a54339e2518b671a7e1076b36dbedb1afdc305a6c54cd2b1a167c7940695520e23b685928a8ce
+  TriggerHashes: 00000000
+  TotalWords: 5
 --- !u!1 &5887080288238022906
 GameObject:
   m_ObjectHideFlags: 0
