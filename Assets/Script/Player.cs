@@ -1,8 +1,9 @@
 using System.Collections;
+using Cinemachine;
 using Fusion;
 using StarterAssets;
-using Unity.Cinemachine;
 using UnityEngine;
+
 
 public class Player : NetworkBehaviour
 {
@@ -164,7 +165,8 @@ public class Player : NetworkBehaviour
                     styleButton?.RPC_ToggleButton(); // Toggle the button state
                 }
             }
-        }else
+        }
+        else
         {
             Debug.DrawRay(playerLookTransform.position, playerLookTransform.forward * 1f, Color.red);
         }
